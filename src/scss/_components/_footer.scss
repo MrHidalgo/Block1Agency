@@ -5,6 +5,10 @@
     &-0 {
       padding-top: 73px;
       padding-bottom: 53px;
+      @include respond(max-extra-small) {
+        padding-top: 37px;
+        padding-bottom: 26px;
+      }
     }
     &-1 {
       background-color: $c-blackPearl--dark;
@@ -15,6 +19,9 @@
   &__row {
     &-0 {
       display: flex;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
     }
     &-1 {
       position: relative;
@@ -35,17 +42,63 @@
     &-0 {
       width: calc(101px + 174px);
       padding-right: 174px;
+      @include respond(max-medium) {
+        order: 3;
+      }
+      @include respond(max-extra-small) {
+        order: 1;
+      }
     }
     &-1 {
       width: calc(96px + 94px);
       padding-right: 93px;
+      @include respond(max-medium) {
+        order: 1;
+        padding-bottom: 50px;
+      }
+      @include respond(max-extra-small) {
+        order: 2;
+      }
     }
     &-2 {
       width: calc(158px + 215px);
       padding-right: 215px;
+      @include respond(max-large) {
+        width: calc(158px + 115px);
+        padding-right: 115px;
+      }
+      @include respond(max-medium) {
+        order: 2;
+      }
+      @include respond(max-extra-small) {
+        order: 3;
+      }
     }
     &-3 {
       width: calc(100% - ((101px + 174px) + (97px + 93px) + (158px + 215px)));
+      @include respond(max-large) {
+        width: calc(100% - ((101px + 174px) + (97px + 93px) + (158px + 115px)));
+      }
+      @include respond(max-medium) {
+        order: 4;
+      }
+    }
+    &-0,
+    &-1,
+    &-2,
+    &-3 {
+      @include respond(max-medium) {
+        width: 50%;
+      }
+      @include respond(max-extra-small) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+      }
     }
   }
 
@@ -53,11 +106,21 @@
     &-0 {
       a {
         color: $c-shipCove;
+
+        &:hover {
+          color: $c-white;
+          @include transition(color);
+        }
       }
     }
     &-1 {
       a {
         color: $c-catalinaBlue;
+
+        &:hover {
+          color: $c-shipCove;
+          @include transition(color);
+        }
       }
     }
 
@@ -81,6 +144,10 @@
       display: flex;
       padding-top: 6px;
       padding-bottom: 6px;
+      @include transition(color);
+      @include respond(max-extra-small) {
+        justify-content: center;
+      }
     }
   }
 
@@ -88,6 +155,10 @@
     display: flex;
     align-items: center;
     padding-bottom: 88px;
+    @include respond(max-medium) {
+      padding-bottom: 50px;
+    }
+
 
     &--left {
       width: calc(100% - 36px);
@@ -97,11 +168,13 @@
       padding-left: 16px;
     }
 
+
     p {
       line-height: 1.2;
       text-align: right;
       color: $c-catalinaBlue;
     }
+
 
     svg {
       width: 20px;
@@ -118,10 +191,19 @@
       margin-bottom: 15px;
     }
 
+    &:hover {
+      svg {
+        fill: $c-white;
+        @include transition(fill);
+      }
+    }
+
+
     svg {
       width: 17px;
       height: 17px;
       fill: $c-regalBlue;
+      @include transition(fill);
     }
   }
 }

@@ -22,6 +22,10 @@
 /* LANG */
 .lang {
   display: flex;
+  @include respond(max-extra-small) {
+    justify-content: center;
+    transform: translateX(10px);
+  }
 
   &--left {
     position: relative;
@@ -52,18 +56,13 @@
       z-index: 1;
       position: relative;
       line-height: 22px;
+      text-transform: uppercase;
       color: $c-white;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: bold;
     }
   }
-}
 
-/* LANG
-==================== */
-
-/* SELECTRIC LANG */
-.lang {
   .selectric {
     display: flex;
     align-items: center;
@@ -76,6 +75,12 @@
       margin: 0;
       color: $c-waikawaGrey;
       font-size: 14px;
+      @include transition(color);
+
+      &:hover {
+        color: $c-white;
+        @include transition(color);
+      }
     }
 
     .button {
@@ -109,22 +114,26 @@
     }
   }
 }
-
-/* SELECTRIC SELECTRIC
+/* LANG
 ==================== */
+
 
 /* SOCIAL */
 .social {
   display: flex;
   justify-content: flex-end;
 
+
   ul {
     display: flex;
   }
 
+
   li {
     &:first-child {
-      margin-left: 0;
+      a {
+        margin-left: 0;
+      }
     }
   }
 
@@ -137,8 +146,17 @@
     margin-left: 22px;
     border-radius: 100%;
 
+    &:hover {
+      svg {
+        fill: $c-white;
+        @include transition(fill);
+      }
+    }
+
+
     svg {
       fill: $c-waikawaGrey;
+      @include transition(fill);
     }
   }
 }

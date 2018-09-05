@@ -74,18 +74,18 @@ footer#footer.footer
           .lang
             .lang--left
               .lang__indicator
-                p EN
+                p en
                 i.i.lang-indicator
             .lang--right
               select(lang-js)
-                option!= "English"
-                option!= "Ukraine"
-                option!= "France"
-                option!= "Italy"
-                option!= "Germany"
-                option!= "Austria"
-                option!= "China"
-                option!= "Japan"
+                option(data-lang="en")!= "English"
+                option(data-lang="ukr")!= "Ukraine"
+                option(data-lang="fr")!= "France"
+                option(data-lang="it")!= "Italy"
+                option(data-lang="gr")!= "Germany"
+                option(data-lang="au")!= "Austria"
+                option(data-lang="ch")!= "China"
+                option(data-lang="jp")!= "Japan"
 
         .footer__col.footer__col-1
           +navlink("footer__nav footer__nav-0", navLinkArr0)

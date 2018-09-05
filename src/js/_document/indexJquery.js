@@ -16,10 +16,22 @@ $(document).ready((ev) => {
    * CALLBACK
    * =============================================
    */
-  const initSelectricJs = (ev) => {
-    $("[lang-js]").selectric({
+  /**
+   *
+   */
+  const initSelectricJs = () => {
+    const langBtn = $("[lang-js]");
+
+    langBtn.selectric({
       responsive: true,
       inheritOriginalWidth: true
+    });
+
+    langBtn.on("selectric-select", function (event, element, selectric) {
+      const langAttr = $(element).find("option:selected").data("lang"),
+        indicator = $(".lang__indicator p");
+
+      indicator.html(langAttr);
     });
   };
 
