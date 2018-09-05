@@ -4,13 +4,13 @@
  */
 const initWebFontLoader = () => {
 
-  // WebFont.load({
-  //   google: {
-  //     families: [
-  //       'Roboto:100,300,400,500,600,700,900'
-  //     ]
-  //   }
-  // });
+  WebFont.load({
+    google: {
+      families: [
+        'Montserrat:400,500,700'
+      ]
+    }
+  });
 
   // const WebFontConfig = {
   //   custom: {

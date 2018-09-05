@@ -16,17 +16,7 @@ $object: (
     info : #33b5e5,
     warning : #ff8800,
     danger : #cc0000
-  ),
-  dimension : (
-    all : 100%,
-    fhd : 1920px,
-    hd : 1440px,
-    wide : 1200px,
-    desktop : 992px,
-    tablet : 768px,
-    mobile : 576px,
-    mobile-xs : 320px,
-  ),
+  )
 );
 
 ///
@@ -42,15 +32,13 @@ $c-info: return-value(colors, info);
 $c-warning: return-value(colors, warning);
 $c-danger: return-value(colors, danger);
 
-$d-all: return-value(dimension, all);
-$d-fhd: return-value(dimension, fhd);
-$d-hd: return-value(dimension, hd);
-$d-wide: return-value(dimension, wide);
-$d-desktop: return-value(dimension, desktop);
-$d-tablet: return-value(dimension, tablet);
-$d-mobile: return-value(dimension, mobile);
-$d-mobile-xs: return-value(dimension, mobile-xs);
-
 ///
 /// ADDITIONAL PALLET
 /// ===============
+$c-blackPearl--light: #102131;
+$c-blackPearl--dark: #101f2d;
+$c-waikawaGrey: #677897;
+$c-shipCove: #7887A7;
+$c-regalBlue: #204262;
+$c-arsenic: #31414e;
+$c-catalinaBlue: #2a4560;

@@ -1,6 +1,43 @@
 // FOOTER :: START
 
 .footer {
+  &__wrapper {
+    &-0 {
+    }
+
+    &-1 {
+      background-color: $c-blackPearl--dark;
+    }
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    @include respond(max-extra-small) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    @include respond(max-extra-small) {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+      fill: $c-regalBlue;
+    }
+  }
 }
 
 // FOOTER :: END
