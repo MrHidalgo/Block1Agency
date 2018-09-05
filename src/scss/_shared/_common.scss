@@ -34,6 +34,10 @@
   }
   &--right {
     width: calc(100% - 36px);
+
+    select {
+      opacity: 0;
+    }
   }
 
   &__indicator {
