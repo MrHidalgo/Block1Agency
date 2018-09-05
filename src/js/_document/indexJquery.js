@@ -16,6 +16,13 @@ $(document).ready((ev) => {
    * CALLBACK
    * =============================================
    */
+  const initSelectricJs = (ev) => {
+    $("[lang-js]").selectric({
+      responsive: true,
+      inheritOriginalWidth: true
+    });
+  };
+
 
 
   /**
@@ -26,6 +33,7 @@ $(document).ready((ev) => {
     initPreventBehavior();
     initObjectFitImages();
     // ...
+    initSelectricJs();
   };
   initJquery();
 });

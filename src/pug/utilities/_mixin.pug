@@ -5,4 +5,16 @@ mixin iconSVG(svgName, mod)
   svg(class="icon icon-" + svgName + ' ' + mod)
     use(xlink:href="./img/sprite.svg#" + svgName)
 
+
+mixin navlink(className, arr)
+  div(class= className)
+    ul
+      each val, idx in arr
+        li
+          a(
+          href= arr[idx].href
+          title=""
+          class=""
+          )!= arr[idx].name
+
 //- MIXIN :: END

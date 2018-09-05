@@ -1,13 +1,122 @@
 // FOOTER :: START
 
+-
+  var navLinkArr0 = [
+  {
+  href: "#",
+  name: "Home"
+  },
+  {
+  href: "#",
+  name: "About us"
+  },
+  {
+  href: "#",
+  name: "Advantages"
+  },
+  {
+  href: "#",
+  name: "Preview"
+  },
+  {
+  href: "#",
+  name: "Video"
+  }
+  ];
+  var navLinkArr1 = [
+  {
+  href: "#",
+  name: "Terms & Conditions"
+  },
+  {
+  href: "#",
+  name: "Privacy policy"
+  },
+  {
+  href: "#",
+  name: "Support"
+  },
+  {
+  href: "#",
+  name: "Chrom Extension"
+  }
+  ];
+  var socialArr = [
+  {
+  href: "#",
+  name: "dribbble"
+  },
+  {
+  href: "#",
+  name: "instagram"
+  },
+  {
+  href: "#",
+  name: "behance"
+  },
+  {
+  href: "#",
+  name: "facebook"
+  },
+  {
+  href: "#",
+  name: "medium"
+  }
+  ];
+
+
 footer#footer.footer
   .footer__wrapper.footer__wrapper-0
     .c-grid
 
+      .footer__row.footer__row-0
+        .footer__col.footer__col-0
+          .lang
+            .lang--left
+              .lang__indicator
+                p EN
+                i.i.lang-indicator
+            .lang--right
+              select(lang-js)
+                option!= "English"
+                option!= "Ukraine"
+                option!= "France"
+                option!= "Italy"
+                option!= "Germany"
+                option!= "Austria"
+                option!= "China"
+                option!= "Japan"
+
+        .footer__col.footer__col-1
+          +navlink("footer__nav footer__nav-0", navLinkArr0)
+
+        .footer__col.footer__col-2
+          +navlink("footer__nav footer__nav-1", navLinkArr1)
+
+        .footer__col.footer__col-3
+          .footer__address
+            .footer__address--left
+              p 231 North Star  34th Street, Suite #100 Cupertino, 98103
+            .footer__address--right
+              +iconSVG("polygon")
+
+          .social
+            ul
+              each val, idx in socialArr
+                li
+                  a(
+                  href= socialArr[idx].href
+                  title=""
+                  class=""
+                  )
+                    +iconSVG(socialArr[idx].name)
+
+
+
   .footer__wrapper.footer__wrapper-1
     .c-grid
 
-      .footer__row
+      .footer__row.footer__row-1
 
         a.footer__logo(href="/" title="")
           +iconSVG("logo")

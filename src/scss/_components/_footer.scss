@@ -3,26 +3,112 @@
 .footer {
   &__wrapper {
     &-0 {
+      padding-top: 73px;
+      padding-bottom: 53px;
     }
-
     &-1 {
       background-color: $c-blackPearl--dark;
     }
   }
 
+
   &__row {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    @include respond(max-extra-small) {
-      flex-wrap: wrap;
-      flex-direction: column;
-      padding-top: 15px;
-      padding-bottom: 15px;
+    &-0 {
+      display: flex;
+    }
+    &-1 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      @include respond(max-extra-small) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
     }
   }
+
+  &__col {
+    &-0 {
+      width: calc(101px + 174px);
+      padding-right: 174px;
+    }
+    &-1 {
+      width: calc(96px + 94px);
+      padding-right: 93px;
+    }
+    &-2 {
+      width: calc(158px + 215px);
+      padding-right: 215px;
+    }
+    &-3 {
+      width: calc(100% - ((101px + 174px) + (97px + 93px) + (158px + 215px)));
+    }
+  }
+
+  &__nav {
+    &-0 {
+      a {
+        color: $c-shipCove;
+      }
+    }
+    &-1 {
+      a {
+        color: $c-catalinaBlue;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        a {
+          padding-top: 0;
+        }
+      }
+      &:last-child {
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    padding-bottom: 88px;
+
+    &--left {
+      width: calc(100% - 36px);
+    }
+    &--right {
+      width: 36px;
+      padding-left: 16px;
+    }
+
+    p {
+      line-height: 1.2;
+      text-align: right;
+      color: $c-catalinaBlue;
+    }
+
+    svg {
+      width: 20px;
+      height: 24px;
+    }
+  }
+
 
   &__logo {
     position: absolute;

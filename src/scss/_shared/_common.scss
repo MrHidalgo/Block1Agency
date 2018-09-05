@@ -1,7 +1,7 @@
 // COMMON :: START
 
 /* ICONS */
-.icon {
+.i {
   &:before {
     content: "";
     display: block;
@@ -10,13 +10,140 @@
 /* ICONS
 ==================== */
 
+
 /* COPYRIGHT */
 .copyright {
   color: $c-catalinaBlue;
   font-size: 12px;
 }
-
 /* COPYRIGHT
+==================== */
+
+/* LANG */
+.lang {
+  display: flex;
+
+  &--left {
+    position: relative;
+    width: 36px;
+    padding-right: 11px;
+  }
+  &--right {
+    width: calc(100% - 36px);
+  }
+
+  &__indicator {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+
+    i {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      z-index: 1;
+      position: relative;
+      line-height: 22px;
+      color: $c-white;
+      font-size: 11px;
+      font-weight: bold;
+    }
+  }
+}
+
+/* LANG
+==================== */
+
+/* SELECTRIC LANG */
+.lang {
+  .selectric {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+
+    .label {
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      color: $c-waikawaGrey;
+      font-size: 14px;
+    }
+
+    .button {
+      position: static;
+      width: 4px;
+      height: 18px;
+      margin-left: 6px;
+      background-color: transparent;
+      @include sprite(arrow);
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &-items {
+      overflow: hidden;
+      border-color: $c-waikawaGrey;
+      border-radius: 5px;
+      background-color: $c-blackPearl--dark;
+
+      li {
+        color: $c-white;
+
+        &:hover,
+        &.highlighted {
+          background-color: $c-shipCove;
+          color: $c-white;
+        }
+      }
+    }
+  }
+}
+
+/* SELECTRIC SELECTRIC
+==================== */
+
+/* SOCIAL */
+.social {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 31px;
+    margin-left: 22px;
+    border-radius: 100%;
+
+    svg {
+      fill: $c-waikawaGrey;
+    }
+  }
+}
+
+/* SOCIAL
 ==================== */
 
 // COMMON :: END
