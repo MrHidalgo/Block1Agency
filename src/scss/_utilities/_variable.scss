@@ -1,0 +1,56 @@
+@import "function";
+
+////
+/// @group  Variable
+////
+
+///
+/// @name   object
+///
+$object: (
+  colors : (
+    white : #fff,
+    black : #000,
+    primary : #4285f4,
+    success : #00c851,
+    info : #33b5e5,
+    warning : #ff8800,
+    danger : #cc0000
+  ),
+  dimension : (
+    all : 100%,
+    fhd : 1920px,
+    hd : 1440px,
+    wide : 1200px,
+    desktop : 992px,
+    tablet : 768px,
+    mobile : 576px,
+    mobile-xs : 320px,
+  ),
+);
+
+///
+/// MAIN PALLET
+/// ===============
+$c-white: return-value(colors, white);
+$c-black: return-value(colors, black);
+
+$c-primary: return-value(colors, primary);
+
+$c-success: return-value(colors, success);
+$c-info: return-value(colors, info);
+$c-warning: return-value(colors, warning);
+$c-danger: return-value(colors, danger);
+
+$d-all: return-value(dimension, all);
+$d-fhd: return-value(dimension, fhd);
+$d-hd: return-value(dimension, hd);
+$d-wide: return-value(dimension, wide);
+$d-desktop: return-value(dimension, desktop);
+$d-tablet: return-value(dimension, tablet);
+$d-mobile: return-value(dimension, mobile);
+$d-mobile-xs: return-value(dimension, mobile-xs);
+
+///
+/// ADDITIONAL PALLET
+/// ===============

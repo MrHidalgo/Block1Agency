@@ -1,0 +1,8 @@
+//- MIXIN :: START
+
+mixin iconSVG(svgName, mod)
+  - var mod = mod || ''
+  svg(class="icon icon-" + svgName + ' ' + mod)
+    use(xlink:href="./img/sprite.svg#" + svgName)
+
+//- MIXIN :: END

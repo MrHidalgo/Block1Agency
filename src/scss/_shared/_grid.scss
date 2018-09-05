@@ -1,0 +1,26 @@
+///
+/// ADDITIONALLY
+/// ===============
+$maxWidth: null;
+
+%grid {
+  width: 100%;
+  @if ($maxWidth) {
+    max-width: $maxWidth;
+  }
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+///
+/// MAIN
+/// ===============
+.c-grid {
+  @extend %grid;
+
+  &-fluid {
+    @extend %grid;
+  }
+}
