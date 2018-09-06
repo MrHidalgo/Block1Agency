@@ -22,5 +22,6 @@ $maxWidth: 1210px;
 
   &-fluid {
     @extend %grid;
+    max-width: 100%;
   }
 }

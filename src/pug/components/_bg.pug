@@ -29,7 +29,20 @@
     srcset="./img/img-bg-parralax-statisticJoin-1@2x.png 2x"
     alt=""
     title=""
-    class!= (contentClassName === "contact") ? "bg__img--contact" : ""
+    )
+
+  if(contentClassName === "contact")
+    img.bg__img.bg__img--contact(
+    src="./img/img-bg-parralax-contact-1.png"
+    srcset="./img/img-bg-parralax-contact-1@2x.png 2x"
+    alt=""
+    title=""
+    )
+    img.bg__img.bg__img--contact(
+    src="./img/img-bg-parralax-contact-0.png"
+    srcset="./img/img-bg-parralax-contact-0@2x.png 2x"
+    alt=""
+    title=""
     )
 
   img.bg__img.bg__img--statistic(
