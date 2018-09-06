@@ -9,28 +9,49 @@
     border-top: 1px solid $c-matisse;
     border-bottom: 1px solid $c-matisse;
     @include respond(max-small) {
+      flex-wrap: wrap;
       padding-top: 30px;
       padding-bottom: 30px;
     }
 
-    &-left,
-    &-right {
-      width: 50%;
+    &-left {
+      width: 40%;
+      @include respond(max-small) {
+        width: 100%;
+        padding-bottom: 40px;
+
+        br {
+          display: none;
+        }
+      }
     }
 
     &-right {
       display: flex;
       justify-content: flex-end;
+      width: 60%;
+      @include respond(max-small) {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
     }
   }
 
   p {
     color: $c-waikawaGrey;
     font-size: 24px;
+    @include respond(max-small) {
+      text-align: center;
+      font-size: 20px;
+    }
   }
 
   &__btn {
     margin-left: 16px;
+    @include respond(max-small) {
+      margin-left: 0;
+    }
 
     &:first-child {
       margin-left: 0;
@@ -38,6 +59,9 @@
 
     &-1 {
       background-color: $c-blackPearl--light;
+      @include respond(max-small) {
+        margin-top: 15px;
+      }
     }
   }
 }
