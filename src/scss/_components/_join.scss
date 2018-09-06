@@ -42,7 +42,12 @@
   &__text {
     width: 100%;
     max-width: 300px;
+    padding-bottom: 45px;
     line-height: 1.6;
+  }
+
+  &__btn {
+    max-width: 211px;
   }
 
   &__box {
@@ -73,6 +78,30 @@
       width: 259px;
       height: 211px;
       background-color: $c-luckyPoint;
+
+      &:hover {
+        z-index: 2;
+        @include transition(z-index);
+      }
+
+      > div {
+        position: absolute;
+        top: 34px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+        background-color: #4ed0e5;
+
+        svg {
+          width: 38px;
+          height: 31px;
+          fill: #162b3f;
+        }
+      }
     }
     &-2 {
       top: 0;
@@ -81,6 +110,12 @@
       height: 212px;
       background: rgb(247, 97, 139);
       background: linear-gradient(45deg, rgba(247, 97, 139, 1) 0%, rgba(42, 122, 255, 1) 100%);
+      @include transition(z-index);
+
+      &:hover {
+        z-index: 2;
+        @include transition(z-index);
+      }
 
       p {
         padding-top: 32px;
@@ -107,11 +142,17 @@
       padding: 16px 16px 0;
       background: rgb(49, 51, 109);
       background: linear-gradient(135deg, rgba(49, 51, 109, 1) 0%, rgba(41, 42, 73, 1) 100%);
+      @include transition(z-index);
       @include respond(max-extra-small) {
         position: relative;
         right: 0;
         height: auto;
         min-height: 252px;
+      }
+
+      &:hover {
+        z-index: 2;
+        @include transition(z-index);
       }
     }
 

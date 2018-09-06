@@ -8,11 +8,20 @@ section#join.join
 
         p.join__text!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
 
+        a(
+        href="#"
+        title=""
+        class="join__btn btn btn--bg"
+        )!= "Why wait?"
+
       .join__wrapper-right
 
         .join__box
           .join__block.join__block-0
           .join__block.join__block-1
+            div
+              +iconSVG("helmet")
+
           .join__block.join__block-2
             p!= "Bulldog <br>Exchange <br>ICO"
             img(
