@@ -24,6 +24,9 @@
   &__subtitle {
     padding-bottom: 64px;
     text-align: center;
+    @include respond(max-extra-small) {
+      padding-bottom: 32px;
+    }
   }
 
   .btn {
@@ -32,6 +35,7 @@
   }
 
   &__block {
+    overflow: hidden;
     position: relative;
     width: calc(100% / 3);
     height: 238px;
@@ -39,10 +43,22 @@
     margin-right: 7.5px;
     border-radius: 7px;
     background-color: $c-regalBlue--dark;
+    @include respond(max-medium) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    @include respond(max-extra-small) {
+      height: auto;
+      min-height: 238px;
+    }
 
     &-wrap {
       display: flex;
       justify-content: space-between;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
     }
 
     &-0 {
@@ -60,6 +76,9 @@
         line-height: 1;
         font-size: 150px;
         font-weight: 500;
+        @include respond(max-extra-small) {
+          font-size: 100px;
+        }
 
         span {
           position: relative;
@@ -76,6 +95,12 @@
         width: 100%;
         max-width: 100%;
         bottom: 0;
+        @include respond(max-medium) {
+          bottom: -10%;
+        }
+        @include respond(max-extra-small) {
+          bottom: 0;
+        }
       }
     }
     &-2 {
@@ -112,6 +137,9 @@
       position: relative;
       padding-top: 24px;
       text-align: center;
+      @include respond(max-extra-small) {
+        padding-top: 34px;
+      }
     }
 
     &-head {
@@ -121,14 +149,33 @@
       padding-left: 34px;
       padding-right: 34px;
       padding-bottom: 29px;
+      @include respond(max-extra-small) {
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       > div {
+        @include respond(max-extra-small) {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+
         &:first-child {
           width: 152px;
           padding-right: 22px;
+          @include respond(max-extra-small) {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 15px;
+          }
         }
         &:last-child {
           width: calc(100% - 152px);
+          @include respond(max-extra-small) {
+            width: 100%;
+          }
         }
       }
 
@@ -173,6 +220,9 @@
       justify-content: space-between;
       padding-left: 26px;
       padding-right: 26px;
+      @include respond(max-extra-small) {
+        padding-bottom: 26px;
+      }
     }
 
     &-btn {

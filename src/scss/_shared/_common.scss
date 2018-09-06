@@ -15,6 +15,12 @@
   color: $c-white;
   font-size: 36px;
   font-weight: normal;
+  @include respond(max-small) {
+    font-size: 32px;
+  }
+  @include respond(max-extra-small) {
+    font-size: 28px;
+  }
 }
 
 /* TITLE
