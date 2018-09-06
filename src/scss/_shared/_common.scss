@@ -92,6 +92,8 @@
 
 /* BTN */
 .btn {
+  cursor: pointer;
+  outline: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -106,6 +108,7 @@
     min-width: 211px;
     padding-left: 50px;
     padding-right: 50px;
+    border: none;
     background: rgb(247, 97, 139);
     background: linear-gradient(45deg, rgba(247, 97, 139, 1) 0%, rgba(42, 122, 255, 1) 50%, rgba(247, 97, 139, 1) 100%);
     background-size: 200% 100%;

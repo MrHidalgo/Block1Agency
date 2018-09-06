@@ -1,0 +1,30 @@
+// CONTACTS :: START
+
+section#contacts.contacts
+  .c-grid
+    .contacts__wrapper
+      .contacts__wrapper-left
+        h1.contacts__title.title!= "Small team. <strong>Big Vision.</strong>"
+        p.contacts__text!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
+
+      .contacts__wrapper-right
+
+        form.contacts__form(action="" autocomplete="off")
+          .contacts__form-group
+            .contacts__form-field
+              input(type="text" placeholder="Name")
+
+            .contacts__form-field
+              input(type="text" placeholder="Telephone")
+
+          .contacts__form-field
+            input(type="text" placeholder="Email Address")
+
+          .contacts__form-field.contacts__form-field--textarea
+            textarea(placeholder="Your Message")
+
+          .contacts__form-field
+            button.btn.btn--bg(type="submit")!= "Send Message"
+
+
+// CONTACTS :: END

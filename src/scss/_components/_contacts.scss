@@ -1,0 +1,95 @@
+// CONTACTS :: START
+
+.contacts {
+  padding-bottom: 25px;
+
+  &__wrapper {
+    display: flex;
+
+    &-left {
+      width: calc(100% - 570px);
+      padding-top: 55px;
+      padding-right: 30px;
+    }
+    &-right {
+      width: 570px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.6;
+  }
+
+  &__form {
+    &-group {
+      display: flex;
+      justify-content: space-between;
+
+      .contacts__form-field {
+        width: calc(100% - 9px);
+
+        &:first-child {
+          margin-right: 9px;
+        }
+        &:last-child {
+          margin-left: 9px;
+        }
+      }
+    }
+    &-field {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      margin-bottom: 35px;
+
+      &--textarea {
+        height: 182px;
+      }
+
+      input,
+      textarea {
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: none;
+        background-color: $c-white;
+        color: #262626;
+        font-size: 16px;
+      }
+
+      input {
+        padding-left: 28px;
+        padding-right: 28px;
+        @include inputPlaceholder {
+          color: rgba(#262626, 0.5);
+        }
+      }
+
+      textarea {
+        resize: none;
+        padding: 19px 28px;
+        @include inputPlaceholder {
+          color: rgba(#262626, 0.5);
+        }
+      }
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+// CONTACTS :: END
