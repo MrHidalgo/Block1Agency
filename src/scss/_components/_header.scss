@@ -6,11 +6,26 @@
   left: 0;
   width: 100vw;
   background-color: transparent;
+  @include transition(background-color, box-shadow);
+
+  &--fixed {
+    z-index: 100;
+    position: fixed;
+    background-color: rgba($c-blackPearl--dark, 0.95);
+    box-shadow: 0 2px 15px 2px rgba($c-blackPearl--dark, 0.35);
+    @include transition(background-color, box-shadow);
+
+    .header__wrapper {
+      min-height: 50px;
+      @include transition(min-height);
+    }
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
     min-height: 72px;
+    @include transition(min-height);
     @include respond(max-small) {
       min-height: 50px;
     }

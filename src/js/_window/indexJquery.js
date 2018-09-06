@@ -2,6 +2,7 @@
  * @description Window on load.
  */
 $(window).on("load", (ev) => {
+  initHeaderFixed();
 });
 
 
@@ -16,5 +17,6 @@ $(window).on("resize", (ev) => {
  * @description Window on scroll.
  */
 $(window).on("scroll", (ev) => {
+  initHeaderFixed();
 });
 

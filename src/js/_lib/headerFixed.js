@@ -7,7 +7,7 @@ function initHeaderFixed() {
   let countScroll = $(window).scrollTop(),
     headerElement = $('.header');
 
-  if (countScroll > 10) {
+  if (countScroll > 5) {
     headerElement.addClass("header--fixed");
   } else {
     headerElement.removeClass("header--fixed");
