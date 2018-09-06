@@ -10,7 +10,7 @@ additionalStyleFile: false
 extends shared/_layout
 
 block content
-  div.bg
+  include ./components/_bg
   div(class!= contentClassName)
 
     include ./components/_join

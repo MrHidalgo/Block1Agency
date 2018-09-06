@@ -10,6 +10,43 @@
 /* ICONS
 ==================== */
 
+.bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &__img {
+    z-index: 0;
+    position: absolute;
+    max-width: 100%;
+
+    &--join {
+      left: 0;
+      bottom: 60%;
+      @include respond(max-small) {
+        bottom: 70%;
+      }
+    }
+    &--statistic {
+      right: 0;
+      bottom: 30%;
+      @include respond(max-large) {
+        bottom: 10%;
+      }
+      @include respond(max-small) {
+        bottom: 15%;
+      }
+    }
+    &--footer {
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
 /* TITLE */
 .title {
   color: $c-white;
