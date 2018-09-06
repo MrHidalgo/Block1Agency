@@ -4,6 +4,10 @@
   ul {
     display: flex;
     align-items: center;
+    @include respond(max-small) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   li {
@@ -32,6 +36,10 @@
     margin-right: 21px;
     color: #7887A7;
     @include transition(color);
+    @include respond(max-small) {
+      min-height: 45px;
+      margin: 0;
+    }
 
     &:hover {
       color: $c-white;

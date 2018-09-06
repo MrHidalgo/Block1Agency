@@ -11,15 +11,46 @@
     display: flex;
     align-items: center;
     min-height: 72px;
+    @include respond(max-small) {
+      min-height: 50px;
+    }
 
     &-left,
-    &-right {
+    &-right,
+    &-mobile {
       width: 50%;
     }
 
     &-right {
       display: flex;
       justify-content: flex-end;
+      @include respond(max-small) {
+        display: none;
+        overflow-y: auto;
+        z-index: 100;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100vw;
+        height: calc(100% - 50px);
+        padding: 50px 15px;
+        background-color: rgba($c-blackPearl--light, 0.98);
+
+        &.is-active {
+          display: block;
+          animation-fill-mode: both;
+          animation-duration: 0.5s;
+          animation-name: zoomIn, fadeIn;
+        }
+      }
+    }
+
+    &-mobile {
+      display: none;
+      @include respond(max-small) {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
 }

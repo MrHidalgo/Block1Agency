@@ -15,6 +15,9 @@
     p {
       color: $c-white;
       font-size: 25px;
+      @include respond(max-small) {
+        font-size: 20px;
+      }
     }
   }
 }

@@ -100,6 +100,7 @@ $(document).ready((ev) => {
     initPreventBehavior();
     initObjectFitImages();
     // ...
+    initHamburger();
     initSelectricJs();
     initProgressCircle();
     statisticBtn();

@@ -9,6 +9,7 @@ function initHamburger() {
   btn.addEventListener("click", (e) => {
 
     e.currentTarget.classList.toggle("is-active");
+    document.querySelector(".header__wrapper-right").classList.toggle("is-active");
 
     hideScrollContainer.forEach((val, idx) => {
       val.classList.toggle("is-hideScroll");

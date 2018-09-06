@@ -20,12 +20,16 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 72px;
   background-color: $c-blackPearl--light;
   line-height: 1.42857143;
   color: $c-waikawaGrey;
   font-size: 16px;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
+  @include respond(max-small) {
+    padding-top: 50px;
+  }
 }
 
 * {
