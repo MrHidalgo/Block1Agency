@@ -1,0 +1,69 @@
+// INFO :: START
+
+.info {
+  padding-top: 50px;
+  padding-bottom: 135px;
+  @include respond(max-small) {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
+
+    &-0 {
+      padding-bottom: 50px;
+    }
+
+    &-1 {
+      flex-direction: row-reverse;
+    }
+
+    &-left,
+    &-right {
+      width: 50%;
+      @include respond(max-small) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      padding-left: 90px;
+      @include respond(max-large) {
+        padding-left: 0;
+      }
+      @include respond(max-extra-small) {
+        padding-bottom: 30px;
+      }
+    }
+
+    &-right {
+      padding-left: 50px;
+      @include respond(max-large) {
+        padding-left: 0;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 300px;
+    line-height: 1.6;
+  }
+}
+
+// INFO :: END
