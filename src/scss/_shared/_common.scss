@@ -21,6 +21,10 @@
   @include respond(max-extra-small) {
     font-size: 28px;
   }
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 /* TITLE

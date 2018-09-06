@@ -3,5 +3,49 @@
 section#join.join
   .c-grid
     .join__wrapper
+      .join__wrapper-left
+        h1.join__title.title!= "Join our exclusive <strong>blockchain</strong> clientelle."
+
+        p.join__text!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
+
+      .join__wrapper-right
+
+        .join__box
+          .join__block.join__block-0
+          .join__block.join__block-1
+          .join__block.join__block-2
+            p!= "Bulldog <br>Exchange <br>ICO"
+            img(
+            src="./img/img-buldog.png"
+            srcset="./img/img-buldog@2x.png 2x"
+            alt=""
+            title=""
+            )
+          .join__block.join__block-3
+            .join__block-head
+              div
+                .join__block-line
+                p!= "Let’s work together."
+              div
+                +iconSVG("icecream")
+
+
+            .join__block-body
+              p Some Services
+
+            .join__block-footer
+              a(
+              href="#" title="" class=""
+              )!= "Logo Design"
+              a(
+              href="#" title="" class=""
+              )!= "Video and Animation"
+              a(
+              href="#" title="" class=""
+              )!= "Whitepaper Design"
+              a(
+              href="#" title="" class=""
+              )!= "Web/UI/UX"
+
 
 // JOIN :: END
