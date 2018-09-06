@@ -1,5 +1,37 @@
 // NAV :: START
 
+-
+  var headerNav = [
+  {
+  href: "/",
+  name: "Home"
+  },
+  {
+  href: "#",
+  name: "About us"
+  },
+  {
+  href: "service.html",
+  name: "Services"
+  },
+  {
+  href: "#",
+  name: "Team"
+  },
+  {
+  href: "contact.html",
+  name: "Contact us"
+  }
+  ];
+
 nav.nav
+  ul
+    each val, idx in headerNav
+      li
+        a(
+        href= headerNav[idx].href
+        title=""
+        class=""
+        )!= headerNav[idx].name
 
 // NAV :: END

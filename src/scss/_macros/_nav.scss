@@ -1,6 +1,43 @@
 // NAV :: START
 
 .nav {
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    &:first-child {
+      a {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      margin-left: 80px;
+      @include respond(max-large) {
+        margin-left: 0;
+      }
+
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    white-space: nowrap;
+    display: flex;
+    font-size: 16px;
+    margin-left: 21px;
+    margin-right: 21px;
+    color: #7887A7;
+    @include transition(color);
+
+    &:hover {
+      color: $c-white;
+      @include transition(color);
+    }
+  }
 }
 
 // NAV :: END

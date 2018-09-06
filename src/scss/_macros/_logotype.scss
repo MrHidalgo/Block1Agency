@@ -1,6 +1,22 @@
 // LOGOTYPE :: START
 
 .logo {
+  a {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 11px;
+      fill: $c-white;
+    }
+
+    p {
+      color: $c-white;
+      font-size: 25px;
+    }
+  }
 }
 
 // LOGOTYPE :: END

@@ -1,6 +1,27 @@
 // HEADER :: START
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: transparent;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
 // HEADER :: END
