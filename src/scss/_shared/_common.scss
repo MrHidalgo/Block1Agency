@@ -24,21 +24,34 @@
     position: absolute;
     max-width: 100%;
 
+    &--video {
+      top: 0;
+
+      &-0 {
+        left: 0;
+      }
+      &-1 {
+        right: -20%;
+      }
+    }
     &--join {
       left: 0;
-      bottom: 60%;
+      bottom: 40%;
+      @include respond(max-large) {
+        bottom: 55%;
+      }
       @include respond(max-small) {
-        bottom: 70%;
+        bottom: 60%;
       }
     }
     &--statistic {
       right: 0;
-      bottom: 30%;
+      bottom: 20%;
       @include respond(max-large) {
         bottom: 10%;
       }
       @include respond(max-small) {
-        bottom: 15%;
+        bottom: 5%;
       }
     }
     &--footer {

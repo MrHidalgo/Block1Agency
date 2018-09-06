@@ -1,0 +1,87 @@
+// MAIN :: START
+
+.video {
+  .main {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    @include respond(max-medium) {
+      padding-bottom: 85px;
+    }
+    @include respond(max-small) {
+      padding-top: 30px;
+      padding-bottom: 62px;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
+
+      &-left {
+        position: relative;
+        width: calc(100% - 470px);
+        min-height: 475px;
+        @include respond(max-medium) {
+          order: 2;
+          width: 100%;
+        }
+        @include respond(max-small) {
+          min-height: 405px;
+        }
+        @include respond(max-extra-small) {
+          min-height: 365px;
+        }
+
+        > div {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: -50px;
+          width: calc(100% + 50px);
+          height: 100%;
+          @include respond(max-wide-small) {
+            left: 0;
+            width: 100%;
+          }
+
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &-right {
+        width: 470px;
+        padding-left: 70px;
+        @include respond(max-medium) {
+          order: 1;
+          width: 100%;
+          padding-left: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__title {
+      padding-bottom: 25px;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 300px;
+      line-height: 1.6;
+      @include respond(max-medium) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// MAIN :: END

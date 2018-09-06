@@ -61,6 +61,7 @@
   }
 
   &__block {
+    cursor: pointer;
     position: absolute;
     border-radius: 6px;
     box-shadow: 0 12px 25px 0 rgba($c-black, 0.49);
@@ -81,7 +82,6 @@
 
       &:hover {
         z-index: 2;
-        @include transition(z-index);
       }
 
       > div {
@@ -110,11 +110,9 @@
       height: 212px;
       background: rgb(247, 97, 139);
       background: linear-gradient(45deg, rgba(247, 97, 139, 1) 0%, rgba(42, 122, 255, 1) 100%);
-      @include transition(z-index);
 
       &:hover {
         z-index: 2;
-        @include transition(z-index);
       }
 
       p {
@@ -142,7 +140,6 @@
       padding: 16px 16px 0;
       background: rgb(49, 51, 109);
       background: linear-gradient(135deg, rgba(49, 51, 109, 1) 0%, rgba(41, 42, 73, 1) 100%);
-      @include transition(z-index);
       @include respond(max-extra-small) {
         position: relative;
         right: 0;
@@ -152,7 +149,6 @@
 
       &:hover {
         z-index: 2;
-        @include transition(z-index);
       }
     }
 
@@ -315,5 +311,4 @@
     }
   }
 }
-
 // JOIN :: END
