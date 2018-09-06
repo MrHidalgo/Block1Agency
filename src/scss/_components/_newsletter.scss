@@ -1,0 +1,45 @@
+// NEWSLETTER :: START
+
+.newsletter {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    border-top: 1px solid $c-matisse;
+    border-bottom: 1px solid $c-matisse;
+    @include respond(max-small) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  p {
+    color: $c-waikawaGrey;
+    font-size: 24px;
+  }
+
+  &__btn {
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-1 {
+      background-color: $c-blackPearl--light;
+    }
+  }
+}
+
+// NEWSLETTER :: END
