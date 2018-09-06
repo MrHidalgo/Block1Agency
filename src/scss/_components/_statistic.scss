@@ -1,6 +1,233 @@
 // STATISTIC :: START
 
 .statistic {
+  padding-top: 135px;
+  padding-bottom: 100px;
+  @include respond(max-small) {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    &-1 {
+      display: flex;
+      justify-content: center;
+      padding-top: 32px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    background-color: $c-tangaroa;
+  }
+
+  &__block {
+    position: relative;
+    width: calc(100% / 3);
+    height: 238px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    border-radius: 7px;
+    background-color: $c-regalBlue--dark;
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-0 {
+      margin-left: 0;
+    }
+    &-1 {
+      .statistic__block-info {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        color: $c-matisse--dark;
+        line-height: 1;
+        font-size: 150px;
+        font-weight: 500;
+
+        span {
+          position: relative;
+          top: 20px;
+          font-size: 24px;
+        }
+      }
+
+      img {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+        bottom: 0;
+      }
+    }
+    &-2 {
+      margin-right: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      img {
+        z-index: 0;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        right: 0;
+        max-width: calc(100% - 10px);
+        margin: auto;
+      }
+    }
+
+    &-setting {
+      z-index: 1;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: $c-slateBlue;
+      }
+    }
+
+    &-title {
+      z-index: 2;
+      position: relative;
+      padding-top: 24px;
+      text-align: center;
+    }
+
+    &-head {
+      display: flex;
+      align-items: center;
+      padding-top: 38px;
+      padding-left: 34px;
+      padding-right: 34px;
+      padding-bottom: 29px;
+
+      > div {
+        &:first-child {
+          width: 152px;
+          padding-right: 22px;
+        }
+        &:last-child {
+          width: calc(100% - 152px);
+        }
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &-progress {
+      position: relative;
+      width: 130px;
+      height: 130px;
+
+      .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+
+        &__meter,
+        &__value {
+          fill: none;
+        }
+
+        &__meter {
+          stroke: #3B5873;
+        }
+
+        &__value {
+          stroke-linecap: round;
+          stroke-dasharray: 383.274px;
+          stroke-dashoffset: 107.317px;
+        }
+      }
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% / 3);
+      height: 26px;
+      margin-left: 8px;
+      margin-right: 8px;
+      border-radius: 2em;
+      border: 1px solid $c-sanMarin;
+      color: $c-sanMarin;
+      font-size: 10px;
+      font-weight: 500;
+
+      &--0 {
+        margin-left: 0;
+      }
+      &--2 {
+        margin-right: 0;
+      }
+      &:hover,
+      &.is-active {
+        background-color: $c-sanMarin;
+        color: $c-regalBlue--dark;
+        @include transition(background-color, color);
+      }
+    }
+
+    &-data {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      p {
+        display: flex;
+        align-items: center;
+        color: $c-shipCove;
+        font-size: 48px;
+        font-weight: 500;
+
+        span {
+          position: relative;
+          top: -15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 // STATISTIC :: END

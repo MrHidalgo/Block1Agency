@@ -10,6 +10,16 @@
 /* ICONS
 ==================== */
 
+/* TITLE */
+.title {
+  color: $c-white;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+/* TITLE
+==================== */
+
 /* BTN */
 .btn {
   position: relative;
@@ -23,6 +33,7 @@
   font-weight: 500;
 
   &--bg {
+    min-width: 211px;
     padding-left: 50px;
     padding-right: 50px;
     background: rgb(247, 97, 139);
@@ -35,6 +46,7 @@
   }
 
   &--border {
+    min-width: 172px;
     padding-left: 32px;
     padding-right: 32px;
 

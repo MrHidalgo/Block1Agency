@@ -2,6 +2,68 @@
 
 section#statistic.statistic
   .c-grid
-    .statistic__wrapper
+    .statistic__wrapper.statistic__wrapper-0
+      h1.statistic__title.title!= "Statistics & Information"
+      p.statistic__subtitle!= "We’re a data driven fintech and blockchain agency."
+
+    .statistic__block-wrap
+      .statistic__block.statistic__block-0
+        a.statistic__block-setting(href="#" title="" class="")
+          +iconSVG("settings")
+
+        .statistic__block-head
+          div
+            .statistic__block-progress
+              .statistic__block-data
+                p(statistic-data-js)!= "72 <span>%</span>"
+              svg(class="progress" viewBox="0 0 130 130")
+                defs
+                  linearGradient(id="gradient" x1="0%" y1="0%" x2="0%" y2="100%")
+                    stop(offset="0%" stop-color="#F7618B")
+                    stop(offset="50%" stop-color="#2A7AFF")
+                    stop(offset="100%" stop-color="#F7618B")
+                circle(class="progress__meter" cx="65" cy="65" r="61" stroke-width="5")
+                circle(class="progress__value" cx="65" cy="65" r="61" stroke="url(#gradient)" stroke-width="5")
+          div
+            p!= "More visitors than start-ups that don’t use a design agency."
+        .statistic__block-footer
+          a.statistic__block-btn.statistic__block-btn--0(href="#" title="" class="" data-val="55")!= "Today"
+          a.statistic__block-btn.statistic__block-btn--1.is-active(href="#" title="" class="" data-val="72")!= "This Week"
+          a.statistic__block-btn.statistic__block-btn--2(href="#" title="" class="" data-val="34")!= "This Month"
+
+      .statistic__block.statistic__block-1
+        a.statistic__block-setting(href="#" title="" class="")
+          +iconSVG("settings")
+
+        p.statistic__block-title!= "100% client satisfaction"
+        p.statistic__block-info!= "100 <span>%</span>"
+
+        img(
+        src="./img/img-graph.png"
+        srcset="./img/img-graph@2x.png 2x"
+        alt=""
+        title=""
+        )
+
+      .statistic__block.statistic__block-2
+        a.statistic__block-setting(href="#" title="" class="")
+          +iconSVG("settings")
+
+        p.statistic__block-title!= "Blockchain growth last 3 years."
+
+        img(
+        src="./img/img-statistic-graph.png"
+        srcset="./img/img-statistic-graph@2x.png 2x"
+        alt=""
+        title=""
+        )
+
+
+    .statistic__wrapper.statistic__wrapper-1
+      a(
+      href="#"
+      title=""
+      class="btn btn--border"
+      )!= "View all data"
 
 // STATISTIC :: END
