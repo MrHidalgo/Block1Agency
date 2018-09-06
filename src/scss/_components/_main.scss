@@ -87,10 +87,18 @@
 .contact {
   .main {
     overflow: hidden;
+    @include respond(max-medium) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+    }
 
     .c-grid-fluid {
       padding-left: 0;
       padding-right: 0;
+      @include respond(max-medium) {
+        order: 2;
+      }
     }
 
     .c-grid {
@@ -98,18 +106,30 @@
       top: (72px + 175px);
       left: 0;
       right: 0;
+      @include respond(max-medium) {
+        order: 1;
+        position: static;
+      }
     }
 
     &__row {
       display: flex;
-      width: 100%;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
 
       &-left {
         width: 65%;
+        @include respond(max-medium) {
+          width: 100%;
+        }
       }
 
       &-right {
         width: 45%;
+        @include respond(max-medium) {
+          width: 100%;
+        }
       }
 
       img {

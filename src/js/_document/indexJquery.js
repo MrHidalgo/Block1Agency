@@ -24,7 +24,8 @@ $(document).ready((ev) => {
 
     langBtn.selectric({
       responsive: true,
-      inheritOriginalWidth: true
+      inheritOriginalWidth: true,
+      disableOnMobile: false
     });
 
     langBtn.on("selectric-select", function (event, element, selectric) {
