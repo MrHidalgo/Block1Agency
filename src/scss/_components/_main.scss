@@ -84,4 +84,68 @@
   }
 }
 
+.service {
+  .main {
+    overflow: hidden;
+    padding-top: 145px;
+    padding-bottom: 160px;
+    @include respond(max-medium) {
+      padding-top: 105px;
+      padding-bottom: 80px;
+    }
+    @include respond(max-small) {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+
+    &__wrapper {
+      display: flex;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
+
+      &-left {
+        width: calc(100% - 470px);
+        @include respond(max-medium) {
+          order: 2;
+          width: 100%;
+        }
+      }
+
+      &-right {
+        width: 470px;
+        padding-left: 70px;
+        @include respond(max-medium) {
+          order: 1;
+          width: 100%;
+          padding-left: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__title {
+      padding-bottom: 25px;
+    }
+
+    &__subtitle {
+      color: $c-white;
+      font-size: 64px;
+      font-weight: bold;
+      @include respond(max-small) {
+        font-size: 44px;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 300px;
+      line-height: 1.6;
+      @include respond(max-medium) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
 // MAIN :: END
