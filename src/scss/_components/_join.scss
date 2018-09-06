@@ -10,15 +10,28 @@
 
   &__wrapper {
     display: flex;
+    @include respond(max-medium) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       width: 420px;
       padding-right: 20px;
+      @include respond(max-medium) {
+        width: 100%;
+        padding-right: 0;
+      }
+      @include respond(max-small) {
+        margin-bottom: 30px;
+      }
     }
     &-right {
       display: flex;
       justify-content: flex-end;
       width: calc(100% - 420px);
+      @include respond(max-medium) {
+        width: 100%;
+      }
     }
   }
 
@@ -36,6 +49,10 @@
     position: relative;
     width: (320px + 158px);
     height: 342px;
+    @include respond(max-extra-small) {
+      height: auto;
+      min-height: 342px;
+    }
   }
 
   &__block {
@@ -84,11 +101,18 @@
     &-3 {
       top: 48px;
       right: 97px;
-      width: 382px;
+      width: 100%;
+      max-width: 382px;
       height: 252px;
-      padding: 16px;
+      padding: 16px 16px 0;
       background: rgb(49, 51, 109);
       background: linear-gradient(135deg, rgba(49, 51, 109, 1) 0%, rgba(41, 42, 73, 1) 100%);
+      @include respond(max-extra-small) {
+        position: relative;
+        right: 0;
+        height: auto;
+        min-height: 252px;
+      }
     }
 
     &-head {
