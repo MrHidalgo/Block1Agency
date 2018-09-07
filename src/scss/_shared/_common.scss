@@ -25,6 +25,11 @@
     position: absolute;
     max-width: 100%;
 
+    &--home {
+      top: 0;
+      left: 0;
+    }
+
     &--contact {
       top: 0;
       left: 0;
@@ -89,6 +94,16 @@
   }
   @include respond(max-extra-small) {
     font-size: 28px;
+  }
+
+  &--big {
+    font-size: 48px;
+    @include respond(max-large) {
+      font-size: 40px;
+    }
+    @include respond(max-medium) {
+      font-size: 32px;
+    }
   }
 
   strong {

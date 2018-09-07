@@ -1,0 +1,80 @@
+// MAIN HOME :: START
+
+section#main.main
+  .c-grid
+    .main__wrapper
+      .main__wrapper-right
+        h1.main__title.title.title--big!= "A creative agency for <strong>blockchain.</strong>"
+
+        a(
+        href="#"
+        title=""
+        class="join__btn btn btn--bg"
+        )!= "Why wait?"
+
+      .main__wrapper-left
+
+  .c-grid-fluid
+    .main__row
+      .main__row-left
+      .main__row-right
+        .main__video
+          img(
+          src="./img/img-home-video-poster.png"
+          srcset="./img/img-home-video-poster@2x.png 2x"
+          alt=""
+          title=""
+          )
+          a(
+          href="#"
+          title=""
+          class=""
+          )
+            +iconSVG("play")
+
+        .main__preview
+          a.main__preview-btn.main__preview-btn--setting(href="#" title="" class="")
+            +iconSVG("settings")
+          a.main__preview-btn.main__preview-btn--close(href="#" title="" class="")
+            +iconSVG("close")
+
+          .main__preview-head
+            .main__preview-img
+              img(
+              src="./img/img-user.png"
+              srcset="./img/img-user@2x.png 2x"
+              alt=""
+              title=""
+              )
+            p.main__preview-name!= "Simone Miro"
+            p.main__preview-email!= "simonem@gmail.com"
+
+          .main__preview-body
+            .main__preview-block.main__preview-block--0
+              p!= "06/07"
+              span!= "Last Visit"
+            .main__preview-block.main__preview-block--1
+              a(href="#" title="" class="")
+                i.i.behance-text
+              span!= "Platform"
+
+          .main__preview-footer
+            ul
+              li
+                p!= "We’re a data driven <span>agency.</span>"
+              li
+                p!= "We’re tech & <span>design.</span>"
+              li
+                p!= "Email <span>the team.</span>"
+
+
+        .main__photo
+          img(
+          src="./img/img-home-photo.png"
+          srcset="./img/img-home-photo@2x.png 2x"
+          alt=""
+          title=""
+          )
+
+
+// MAIN HOME :: END

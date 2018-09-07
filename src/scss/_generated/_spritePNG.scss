@@ -1,10 +1,19 @@
 $sprite: (
   arrow: (
   offset-x: -30px,
-  offset-y: 0px,
+    offset-y: -13px,
   width: 8px,
   height: 6px,
-  total-width: 38px,
+    total-width: 44px,
+    total-height: 25px,
+    image: '../img/sprite.png'
+  ),
+  behance-text: (
+    offset-x: -30px,
+    offset-y: 0px,
+    width: 14px,
+    height: 8px,
+    total-width: 44px,
   total-height: 25px,
   image: '../img/sprite.png'
   ),
@@ -13,7 +22,7 @@ $sprite: (
   offset-y: 0px,
   width: 25px,
   height: 25px,
-  total-width: 38px,
+    total-width: 44px,
   total-height: 25px,
   image: '../img/sprite.png'
   ),
@@ -65,6 +74,10 @@ $sprite: (
   .arrow:before {
   @include sprite(arrow);
   }
+
+.behance-text:before {
+  @include sprite(behance-text);
+}
   .lang-indicator:before {
   @include sprite(lang-indicator);
   }

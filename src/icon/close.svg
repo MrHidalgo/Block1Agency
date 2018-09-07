@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012">
+        <g id="Dark-Landing" transform="translate(-1239.000000, -191.000000)" fill="#6266D7" fill-rule="nonzero">
+            <g id="Panel-4" transform="translate(608.000000, 131.000000)">
+                <g id="Preview" transform="translate(431.000000, 8.000000)">
+                    <g id="close" transform="translate(206.000000, 58.500000) rotate(-45.000000) translate(-206.000000, -58.500000) translate(197.000000, 50.000000)">
+                        <path d="M8,1.41786171 L8,15.5757323 C8,16.128017 8.44771525,16.5757323 9,16.5757323 C9.55228475,16.5757323 10,16.128017 10,15.5757323 L10,1.41786171 C10,0.865576959 9.55228475,0.417861709 9,0.417861709 C8.44771525,0.417861709 8,0.865576959 8,1.41786171 Z" id="Path-6"></path>
+                        <path d="M8,1.41786171 L8,15.5757323 C8,16.128017 8.44771525,16.5757323 9,16.5757323 C9.55228475,16.5757323 10,16.128017 10,15.5757323 L10,1.41786171 C10,0.865576959 9.55228475,0.417861709 9,0.417861709 C8.44771525,0.417861709 8,0.865576959 8,1.41786171 Z" id="Path-6" transform="translate(9.000000, 8.496797) rotate(-270.000000) translate(-9.000000, -8.496797) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
