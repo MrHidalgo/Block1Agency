@@ -254,18 +254,36 @@
         &--setting {
           left: 16px;
 
+          &:hover {
+            svg {
+              transform: scale(1.2) rotate(90deg);
+              transform-origin: center;
+              @include transition(transform);
+            }
+          }
+
           svg {
             width: 18px;
             height: 18px;
+            @include transition(transform);
           }
         }
 
         &--close {
           right: 16px;
 
+          &:hover {
+            svg {
+              transform: rotate(180deg);
+              transform-origin: center;
+              @include transition(transform);
+            }
+          }
+
           svg {
             width: 12px;
             height: 13px;
+            @include transition(transform);
           }
         }
       }

@@ -103,6 +103,14 @@
         border-radius: 100%;
         background-color: #4ed0e5;
 
+        &:hover {
+          svg {
+            animation-fill-mode: both;
+            animation-duration: 1s;
+            animation-name: tada;
+          }
+        }
+
         svg {
           width: 38px;
           height: 31px;
@@ -200,6 +208,14 @@
           height: 77px;
           border-radius: 100%;
           background-color: $c-mediumTurquoise;
+
+          &:hover {
+            svg {
+              animation-fill-mode: both;
+              animation-duration: 1s;
+              animation-name: tada;
+            }
+          }
 
           svg {
             width: 48px;

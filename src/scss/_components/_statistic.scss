@@ -120,15 +120,24 @@
     }
 
     &-setting {
-      z-index: 1;
+      z-index: 3;
       position: absolute;
       top: 16px;
       right: 16px;
+
+      &:hover {
+        svg {
+          transform: scale(1.2) rotate(90deg);
+          transform-origin: center;
+          @include transition(transform);
+        }
+      }
 
       svg {
         width: 18px;
         height: 18px;
         fill: $c-slateBlue;
+        @include transition(transform);
       }
     }
 
