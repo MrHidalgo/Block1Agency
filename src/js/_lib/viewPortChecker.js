@@ -9,7 +9,7 @@ function initViewPortChecker() {
       classToAdd: 'viewport-show-js animated',
       classToAddForFullView: 'full-visible',
       classToRemove: 'viewport-hide-js',
-      removeClassAfterAnimation: true,
+      removeClassAfterAnimation: false,
       offset: 50,
       repeat: false,
       callbackFunction: function (elem, action) {
