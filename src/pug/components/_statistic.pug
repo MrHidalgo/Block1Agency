@@ -3,11 +3,15 @@
 section#statistic.statistic
   .c-grid
     .statistic__wrapper.statistic__wrapper-0
-      h1.statistic__title.title!= "Statistics & Information"
-      p.statistic__subtitle!= "We’re a data driven fintech and blockchain agency."
+      h1.statistic__title.title.viewport-hide-js!= "Statistics & Information"
+      p.statistic__subtitle.viewport-hide-js(
+      data-animation-delay="0.25s"
+      )!= "We’re a data driven fintech and blockchain agency."
 
     .statistic__block-wrap
-      .statistic__block.statistic__block-0
+      .statistic__block.statistic__block-0.viewport-hide-js(
+      data-animation-name="slideInLeft"
+      )
         a.statistic__block-setting(href="#" title="" class="")
           +iconSVG("settings")
 
@@ -31,7 +35,7 @@ section#statistic.statistic
           a.statistic__block-btn.statistic__block-btn--1.is-active(href="#" title="" class="" data-val="72")!= "This Week"
           a.statistic__block-btn.statistic__block-btn--2(href="#" title="" class="" data-val="34")!= "This Month"
 
-      .statistic__block.statistic__block-1
+      .statistic__block.statistic__block-1.viewport-hide-js()
         a.statistic__block-setting(href="#" title="" class="")
           +iconSVG("settings")
 
@@ -45,7 +49,9 @@ section#statistic.statistic
         title=""
         )
 
-      .statistic__block.statistic__block-2
+      .statistic__block.statistic__block-2.viewport-hide-js(
+      data-animation-name="slideInRight"
+      )
         a.statistic__block-setting(href="#" title="" class="")
           +iconSVG("settings")
 
@@ -59,7 +65,9 @@ section#statistic.statistic
         )
 
 
-    .statistic__wrapper.statistic__wrapper-1
+    .statistic__wrapper.statistic__wrapper-1.viewport-hide-js(
+    data-animation-delay="0.15s"
+    )
       a(
       href="#"
       title=""

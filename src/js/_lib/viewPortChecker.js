@@ -10,7 +10,7 @@ function initViewPortChecker() {
       classToAddForFullView: 'full-visible',
       classToRemove: 'viewport-hide-js',
       removeClassAfterAnimation: true,
-      offset: 100,
+      offset: 50,
       repeat: false,
       callbackFunction: function (elem, action) {
 

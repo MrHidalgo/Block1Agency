@@ -10,7 +10,9 @@ mixin navlink(className, arr)
   div(class= className)
     ul
       each val, idx in arr
-        li
+        li.viewport-hide-js(
+        data-animation-delay!= (0.0 + parseFloat(0.1 * idx)).toFixed(2) + "s"
+        )
           a(
           href= arr[idx].href
           title=""

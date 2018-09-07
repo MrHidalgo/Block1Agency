@@ -4,9 +4,13 @@ section#main.main
   .c-grid
     .main__wrapper
       .main__wrapper-right
-        h1.main__title.title.title--big!= "A creative agency for <strong>blockchain.</strong>"
+        h1.main__title.title.title--big.viewport-hide-js(
+        data-animation-name="slideInLeft"
+        )!= "A creative agency for <strong>blockchain.</strong>"
 
-        a(
+        a.viewport-hide-js(
+        data-animation-name="slideInLeft"
+        data-animation-delay="0.2s"
         href="#"
         title=""
         class="join__btn btn btn--bg"
@@ -18,7 +22,9 @@ section#main.main
     .main__row
       .main__row-left
       .main__row-right
-        .main__video
+        .main__video.viewport-hide-js(
+        data-animation-name="fadeIn"
+        )
           img(
           src="./img/img-home-video-poster.png"
           srcset="./img/img-home-video-poster@2x.png 2x"
@@ -32,7 +38,10 @@ section#main.main
           )
             +iconSVG("play")
 
-        .main__preview
+        .main__preview.viewport-hide-js(
+        data-animation-name="zoomIn"
+        data-animation-duration="1s"
+        )
           a.main__preview-btn.main__preview-btn--setting(href="#" title="" class="")
             +iconSVG("settings")
           a.main__preview-btn.main__preview-btn--close(href="#" title="" class="")
@@ -68,7 +77,10 @@ section#main.main
                 p!= "Email <span>the team.</span>"
 
 
-        .main__photo
+        .main__photo.viewport-hide-js(
+        data-animation-name="fadeIn"
+        data-animation-delay="0.8s"
+        )
           img(
           src="./img/img-home-photo.png"
           srcset="./img/img-home-photo@2x.png 2x"

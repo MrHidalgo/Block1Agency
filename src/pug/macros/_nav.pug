@@ -27,7 +27,11 @@
 nav.nav
   ul
     each val, idx in headerNav
-      li
+      li.viewport-hide-js(
+      data-vp-offset="-10"
+      data-animation-name="slideInDown"
+      data-animation-delay!= (0.25 + parseFloat(0.1 * idx)).toFixed(2) + "s"
+      )
         a(
         href= headerNav[idx].href
         title=""

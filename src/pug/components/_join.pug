@@ -4,11 +4,14 @@ section#join.join
   .c-grid
     .join__wrapper
       .join__wrapper-left
-        h1.join__title.title!= "Join our exclusive <strong>blockchain</strong> clientelle."
+        h1.join__title.title.viewport-hide-js!= "Join our exclusive <strong>blockchain</strong> clientelle."
 
-        p.join__text!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
+        p.join__text.viewport-hide-js(
+        data-animation-delay="0.2s"
+        )!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
 
-        a(
+        a.viewport-hide-js(
+        data-animation-delay="0.3s"
         href="#"
         title=""
         class="join__btn btn btn--bg"
@@ -17,12 +20,18 @@ section#join.join
       .join__wrapper-right
 
         .join__box
-          .join__block.join__block-0
-          .join__block.join__block-1
+          .join__block.join__block-0.viewport-hide-js(
+          data-animation-name="fadeIn"
+          )
+          .join__block.join__block-1.viewport-hide-js(
+          data-animation-name="slideInUp"
+          )
             div
               +iconSVG("helmet")
 
-          .join__block.join__block-2
+          .join__block.join__block-2.viewport-hide-js(
+          data-animation-name="slideInRight"
+          )
             p!= "Bulldog <br>Exchange <br>ICO"
             img(
             src="./img/img-buldog.png"
@@ -30,7 +39,9 @@ section#join.join
             alt=""
             title=""
             )
-          .join__block.join__block-3
+          .join__block.join__block-3.viewport-hide-js(
+          data-animation-name="slideInLeft"
+          )
             .join__block-head
               div
                 .join__block-line

@@ -127,6 +127,7 @@ $(document).ready((ev) => {
     initProgressCircle();
     statisticBtn();
     initCountTo();
+    initViewPortChecker();
   };
   initJquery();
 });

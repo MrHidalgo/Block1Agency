@@ -71,7 +71,7 @@ footer#footer.footer
 
       .footer__row.footer__row-0
         .footer__col.footer__col-0
-          .lang
+          .lang.viewport-hide-js
             .lang--left
               .lang__indicator
                 p en
@@ -94,7 +94,7 @@ footer#footer.footer
           +navlink("footer__nav footer__nav-1", navLinkArr1)
 
         .footer__col.footer__col-3
-          .footer__address
+          .footer__address.viewport-hide-js
             .footer__address--left
               p 231 North Star  34th Street, Suite #100 Cupertino, 98103
             .footer__address--right
@@ -103,7 +103,10 @@ footer#footer.footer
           .social
             ul
               each val, idx in socialArr
-                li
+                li.viewport-hide-js(
+                data-animation-name="slideInRight"
+                data-animation-delay!= (0.0 + parseFloat(0.1 * idx)).toFixed(2) + "s"
+                )
                   a(
                   href= socialArr[idx].href
                   title=""

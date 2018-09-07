@@ -9,5 +9,6 @@
 * - jquery-migrate-3.0.1.min.js;
 * - jquery.stellar.min.js;
 * - countto;
+* - jQuery-viewport-checker;
 *
 * */

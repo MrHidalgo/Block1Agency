@@ -4,10 +4,19 @@ section#main.main
   .c-grid
     .main__wrapper
       .main__wrapper-left
-        div
+        div.viewport-hide-js(
+        data-vp-offset="-10"
+        data-animation-name="slideInLeft"
+        )
           iframe(src="https://www.youtube.com/embed/uuPMXS7dd9s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+
       .main__wrapper-right
-        h1.main__title.title!= "Give your blockchain <strong>company an identity.</strong>"
-        p.main__text!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
+        h1.main__title.title.viewport-hide-js(
+        data-animation-name="slideInRight"
+        )!= "Give your blockchain <strong>company an identity.</strong>"
+
+        p.main__text.viewport-hide-js(
+        data-animation-name="slideInRight"
+        )!= "Get all the benefits of an in-wall or in-ceiling speaker system without any of the hassle. Just replace a few lights around your house, and start streaming crisp, clear audio, everywhere."
 
 // MAIN VIDEO :: END
