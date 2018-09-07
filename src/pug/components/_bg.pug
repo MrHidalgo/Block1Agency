@@ -1,6 +1,6 @@
 // BG :: START
 
-.bg
+.bg(parallax-js)
   if(contentClassName === "video" || contentClassName === "service")
     img.bg__img.bg__img--video.bg__img--video-0(
     src="./img/img-bg-parralax-video-0.png"
@@ -29,6 +29,7 @@
     srcset="./img/img-bg-parralax-statisticJoin-1@2x.png 2x"
     alt=""
     title=""
+    data-stellar-ratio="1.5"
     )
 
   if(contentClassName === "contact")
@@ -51,12 +52,14 @@
     srcset="./img/img-bg-parralax-home-1@2x.png 2x"
     alt=""
     title=""
+    data-stellar-ratio="0.85"
     )
     img.bg__img.bg__img--home(
     src="./img/img-bg-parralax-home-0.png"
     srcset="./img/img-bg-parralax-home-0@2x.png 2x"
     alt=""
     title=""
+    data-stellar-ratio="1.2"
     )
 
   img.bg__img.bg__img--statistic(
@@ -64,12 +67,14 @@
   srcset="./img/img-bg-parralax-statisticJoin@2x.png 2x"
   alt=""
   title=""
+  data-stellar-ratio="1.15"
   )
   img.bg__img.bg__img--footer(
   src="./img/img-bg-parralax-footer.png"
   srcset="./img/img-bg-parralax-footer@2x.png 2x"
   alt=""
   title=""
+  data-stellar-ratio="1.65"
   )
 
 // BG :: END

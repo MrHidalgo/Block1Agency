@@ -102,6 +102,7 @@ $(document).ready((ev) => {
     initObjectFitImages();
     // ...
     initHamburger();
+    initParallax();
     initSelectricJs();
     initProgressCircle();
     statisticBtn();
