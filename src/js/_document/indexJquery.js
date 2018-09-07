@@ -80,15 +80,35 @@ $(document).ready((ev) => {
     $(".statistic__block-btn").on("click", (e) => {
       const elem = $(e.currentTarget),
         elemAttr = elem.data("val"),
-        statisticDataElem = $("[statistic-data-js]");
+        statisticDataElem = $("[statistic-data-js]"),
+        prevStaticVal = parseInt(statisticDataElem.find("i").text());
 
       $(".statistic__block-btn").removeClass("is-active");
       elem.addClass("is-active");
 
-      statisticDataElem.html(elemAttr + "<span>%</span>");
+      statisticDataElem.html("<i>" + elemAttr + "</i><span>%</span>");
+
+      countToCallback("[statistic-data-js] i", prevStaticVal, elemAttr);
 
       progressData(progressCircumference($('.progress__value').attr("r")), elemAttr);
     });
+  };
+
+
+  /**
+   *
+   */
+  function countToCallback(selector, from, to, spped = 800) {
+    $(selector).countTo({
+      from: from,
+      to: to,
+      speed: spped,
+    });
+  }
+
+  const initCountTo = () => {
+    countToCallback("[statistic-data-js] i", 0, 72);
+    countToCallback(".statistic__block-info i", 0, 100, 700);
   };
 
 
@@ -106,6 +126,7 @@ $(document).ready((ev) => {
     initSelectricJs();
     initProgressCircle();
     statisticBtn();
+    initCountTo();
   };
   initJquery();
 });

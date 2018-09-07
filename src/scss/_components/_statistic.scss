@@ -80,6 +80,10 @@
           font-size: 100px;
         }
 
+        i {
+          font-style: normal;
+        }
+
         span {
           position: relative;
           top: 20px;
@@ -217,8 +221,6 @@
 
         &__value {
           stroke-linecap: round;
-          stroke-dasharray: 383.274px;
-          stroke-dashoffset: 107.317px;
         }
       }
     }
@@ -278,6 +280,10 @@
         color: $c-shipCove;
         font-size: 48px;
         font-weight: 500;
+
+        i {
+          font-style: normal;
+        }
 
         span {
           position: relative;

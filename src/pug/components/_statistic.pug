@@ -15,7 +15,7 @@ section#statistic.statistic
           div
             .statistic__block-progress
               .statistic__block-data
-                p(statistic-data-js)!= "72 <span>%</span>"
+                p(statistic-data-js)!= "<i>72</i> <span>%</span>"
               svg(class="progress" viewBox="0 0 130 130")
                 defs
                   linearGradient(id="gradient" x1="0%" y1="0%" x2="0%" y2="100%")
@@ -36,7 +36,7 @@ section#statistic.statistic
           +iconSVG("settings")
 
         p.statistic__block-title!= "100% client satisfaction"
-        p.statistic__block-info!= "100 <span>%</span>"
+        p.statistic__block-info!= "<i>100</i> <span>%</span>"
 
         img(
         src="./img/img-graph.png"
