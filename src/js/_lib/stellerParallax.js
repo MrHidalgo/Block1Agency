@@ -8,6 +8,7 @@ function initParallax() {
     $(function () {
       $.stellar({
         horizontalScrolling: false,
+        hideDistantElements: false,
       });
     });
   }
