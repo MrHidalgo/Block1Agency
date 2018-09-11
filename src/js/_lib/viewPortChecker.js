@@ -12,6 +12,8 @@ function initViewPortChecker() {
       removeClassAfterAnimation: true,
       offset: 100,
       repeat: false,
+      invertBottomOffset: true,
+      delay: 0,
       callbackFunction: function (elem, action) {
 
         $(elem).css({

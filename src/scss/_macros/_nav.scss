@@ -11,6 +11,9 @@
   }
 
   li {
+    @include respond(max-small) {
+      animation: unset !important;
+    }
     &:first-child {
       a {
         margin-left: 0;
